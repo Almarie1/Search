@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <title>Google Advanced Search</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div id="header">
         <a href="index.html">Google Search</a>
     </div>
     <div id="search-container">
+        <img src="logo.png" alt="Logo"> 
         <form action="https://www.google.com/search" method="get">
-            <input type="text" name="as_q" id="search-input" placeholder="all these words">
-            <input type="text" name="as_epq" id="search-input" placeholder="this exact word or phrase">
-            <input type="text" name="as_oq" id="search-input" placeholder="any of these words">
-            <input type="text" name="as_eq" id="search-input" placeholder="none of these words">
+            <div id="search-fields">
+                <input type="text" name="as_q" class="search-input" placeholder="all these words">
+                <br>
+                <input type="text" name="as_epq" class="search-input" placeholder="this exact word or phrase">
+                <br>
+                <input type="text" name="as_oq" class="search-input" placeholder="any of these words">
+                <br>
+                <input type="text" name="as_eq" class="search-input" placeholder="none of these words">
+            </div>
             <div id="buttons">
                 <input type="submit" value="Google Search" id="search-button">
             </div>
