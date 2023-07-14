@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="images.html"></a>
-            
-        <ul>
-    </nav>
-    <div>
+    <div id="header">
+        <a href="index.html">Google Search</a>
+        <a href="images.html">Image Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
+    <div id="search-container">
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input type="text" name="q" id="search-input" placeholder="Search">
+            <div id="buttons">
+                <input type="submit" value="Google Search" id="search-button">
+                <a href="https://www.google.com/search?q=" id="lucky-button">I'm Feeling Lucky</a>
+            </div>
         </form>
     </div>
 </body>
